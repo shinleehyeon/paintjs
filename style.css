@@ -6,19 +6,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .canvas {
     width: 700px;
     height: 700px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
 }
 
 .controls {
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,12 +33,13 @@ body {
     width: 50px;
     height: 50px;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
-    border-radius: 25px;
+    border-radius: 30px;
     margin: 5px;
     cursor: pointer;
+    border: 3px solid white;
 }
 
-.controls .controls__btns {
+.controls__btns {
     margin-bottom: 30px;
 }
 
@@ -49,13 +50,25 @@ body {
     padding: 5px 0px;
     width: 80px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
     border: 2px solid rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
 }
-.controls__btns button:active{
+
+.controls__btns button:active {
     transform: scale(0.98);
+}
+
+.custom-color-button {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+    border-radius: 25px;
+    margin: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    border: 3px solid white;
 }
